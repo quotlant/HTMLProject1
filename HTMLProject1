@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<title> HTMLProject1</title>
+ </head>   
+<body>
+<nav>
+<ul>
+    <li> <a href="#Home"> Home </a></li>
+    <li><a href="#About"> About </a> </li>
+    <li> <a href="#Work"> Work </a></li>
+    <li> <a href="#Resume"> Resume </a></li>
+    <li> <a href="#Contact"> Contact</a></li>
+</ul>
+</nav>
+
+<section id="Home">
+    <h1> THIS IS THE HOMEPAGE</h1>
+
+
+</section>
+
+<section id="About">
+    <h1><strong> About Me </strong></h1>
+    <form>
+        <label for="About"> About Me</label> <br>
+        <textarea id="About" name="About" rows="4"> </textarea> <br>
+    </form>
+</section>
+
+
+<section id="Work">
+<h1> <strong> Work </strong></h1>
+<form>
+     <label for="Work"> Work Experience </label> <br>
+     <textarea id="Work" name="Work" rows="6"></textarea><br>
+</form>
+</section>
+
+
+
+<section id="Resume">
+<h1> Resume</h1>
+<form>
+<label for="Resume"> Resume </label> <br>
+<textarea id="Resume" name="Resume" rows="5"></textarea> <br>
+
+</form>
+
+
+</section>
+
+<section id="Contact">
+<h1> Contact Information</h1>
+<form>
+<label for="Contact"> Name</label> <br>
+<textarea id="Contact" name="Contact" rows="3"></textarea> <br>
+
+
+</form>
+
+
+
+</section>
+
+
+</body>
+
+
+
+
+
+</html>

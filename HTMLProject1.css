@@ -1,0 +1,22 @@
+h1 {
+  display: flex;
+  text-align: center;
+}
+
+body {
+  background-color: yellowgreen;
+  font-family: roboto;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  color: blue;
+}
+
+#firstheading {
+  display: flex;
+  border-radius: 0px;
+  justify-content: center;
+  font-family: arial;
+}

@@ -1,73 +1,137 @@
 <!DOCTYPE html>
 <html>
- <head>
-<title> HTMLProject1</title>
- </head>   
+<head>
+    <title>HTMLProject1</title>
+    <link href="HTMLProject1.css" rel="stylesheet">
+</head>
 <body>
-<nav>
-<ul>
-    <li> <a href="#Home"> Home </a></li>
-    <li><a href="#About"> About </a> </li>
-    <li> <a href="#Work"> Work </a></li>
-    <li> <a href="#Resume"> Resume </a></li>
-    <li> <a href="#Contact"> Contact</a></li>
-</ul>
-</nav>
+    <!-- This is a navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Work">Work</a></li>
+            <li><a href="#Resume">Resume</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Videos">  Videos</a> </li> 
+            <li><a href="#Audio"> Audio</a> </li> 
+            
+        </ul>
+    </nav>
+    <!-- End of the Navigation -->
+    
+<main>
 
-<section id="Home">
-    <h1> THIS IS THE HOMEPAGE</h1>
+    <section id="Home">
+        <h1 id="firstheading">JUNIOR SOFTWARE DEVELOPER</h1>
+        <!-- Embedded YouTube video -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WR1ydijTx5E?si=1uwPmj2NQOR5A96E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="About">
+        <h1><strong>About Me</strong></h1>
+        <p>I’m a software developer at Microsoft Kenya, where I help shape the future of technology through innovative software solutions. My work involves designing, coding, and testing applications that power everything from Windows and Azure to Microsoft Office, impacting millions of users worldwide. With a passion for programming and problem-solving, I thrive in a collaborative environment, tackling complex challenges and staying ahead of industry trends. At Microsoft, I’m proud to contribute to cutting-edge projects that drive global innovation.</p>
+    </section>
+
+    <section id="Work">
+        <h1><strong>Work</strong></h1>
+  <p> 
+    <em>Tech Innovations Ltd., Nairobi, Kenya</em><br>
+    - Designed and developed scalable web and mobile applications using Python, JavaScript, and React, meeting client requirements for usability and performance.<br>
+    - Collaborated with cross-functional teams to implement APIs and integrate third-party services, enhancing functionality for e-commerce and fintech platforms.<br>
+    - Optimized codebases, reducing application load times by 20% and improving user satisfaction metrics.<br>
+    - Conducted rigorous testing and debugging, ensuring 95% bug-free releases across production environments.<br>
+    - Mentored junior developers, fostering skill development through code reviews and pair-programming sessions.<br><br>
+
+    <strong>Junior Software Developer</strong><br>
+    <em>CodeHub Solutions, Nairobi, Kenya</em><br>
+    <em>June 2019 – December 2021</em><br>
+    - Built and maintained responsive websites using HTML, CSS, and PHP, supporting local businesses in digitizing operations.<br>
+    - Contributed to the development of a microfinance management system, streamlining loan processing for 5,000+ users.<br>
+    - Assisted in database management with MySQL, ensuring data integrity and efficient query performance.<br>
+    - Participated in agile sprints, delivering features on schedule and adapting to evolving project needs.<br>
+    - Provided technical support, resolving 90% of client issues within 24 hours, boosting customer retention.<br>
+  </p>
+    </section>
+    <!-- this is/are locally available video files -->
+    <section id="Videos">
+        <h1>Watch the Video</h1>
+        <video width="320" height="240" controls>
+           <source src="assets/how_to_become_a_developer.MP4" type="video/mp4" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+  </section>
 
 
+  <!-- i used audio tag to add the audio version of the video -->
+  <section id="Audio">
+    <h1>Listen to the Audio version</h1>
+    <audio controls>
+        <source src="audio_file.mp3" type="audio/mpeg">
+        <source src="assets/audio.mp3" type="audio/mp4">
+        Your browser does not support the audio tag.
+    </audio>
 </section>
-
-<section id="About">
-    <h1><strong> About Me </strong></h1>
-    <form>
-        <label for="About"> About Me</label> <br>
-        <textarea id="About" name="About" rows="4"> </textarea> <br>
-    </form>
-</section>
-
-
-<section id="Work">
-<h1> <strong> Work </strong></h1>
-<form>
-     <label for="Work"> Work Experience </label> <br>
-     <textarea id="Work" name="Work" rows="6"></textarea><br>
-</form>
-</section>
-
-
 
 <section id="Resume">
-<h1> Resume</h1>
-<form>
-<label for="Resume"> Resume </label> <br>
-<textarea id="Resume" name="Resume" rows="5"></textarea> <br>
-
-</form>
-
-
+    <h1>Resume Summary</h1>
+    <table>
+        <!-- this is the table header containing the name of the table columns -->
+        <thead>
+            <!-- tr means table rows -->
+            <tr>
+                <!-- th is the used to list the headings for the header(thead)
+                 meaning th is nested in thead  -->
+                <th>Company</th>
+                <th>Position</th>
+                <th>Duration</th>
+                <th>Responsibilities</th>
+            </tr>
+        </thead>
+        <!-- tbody is the Table Body containing the actual data of the rows -->
+        <tbody>
+            <tr>
+                <!-- td stands for Table Data so the content of each tag is arranged in row form -->
+                <td>Tech Innovations Ltd.</td>
+                <td>Senior Developer</td>
+                <td>2022-Present</td>
+                <td>Lead development of scalable applications, optimize codebase, mentor junior developers.</td>
+            </tr>
+            <tr>
+                <td>CodeHub Solutions</td>
+                <td>Junior Developer</td>
+                <td>2019-2021</td>
+                <td>Develop responsive websites, contribute to a microfinance system, ensure data integrity.</td>
+            </tr>
+        </tbody>
+    </table>
 </section>
 
-<section id="Contact">
-<h1> Contact Information</h1>
-<form>
-<label for="Contact"> Name</label> <br>
-<textarea id="Contact" name="Contact" rows="3"></textarea> <br>
+    <section id="Contact">
+        <h1>Contact Information</h1>
+        <form>
+            <label for="Contact">Name</label><br>
+            <input type="text" id="name" name="Contact"><br>
+            <input type="email" id="email" placeholder="enter your email"> <br>
+            <input type="number" id="phone" placeholder="enter your phone #"> <br>
+            
+            <Input type="text" id="text placeholder= " Message"></Input>
+            
+            
+        </form>
+    </section>
 
 
-</form>
+    
 
 
+    <!-- Added Footer -->
+    <footer>
 
-</section>
+        <!--copyright is written by the code &copy; or &#169;  -->
+        <p>&copy; 2025 Software Developer Portfolio. <a href="#Contact">Contact Me</a></p>
+    </footer>
 
-
+</main>
 </body>
-
-
-
-
-
 </html>
